@@ -1,0 +1,218 @@
+{
+  "type": "metrics",
+  "agentId": "agent-GaagrunLand",
+  "timestamp": 1750097775.7877839,
+  "cpu": {
+    "Avg_MHz": "52",
+    "PkgTmp": "29",
+    "PkgWatt": "5.36"
+  },
+  "gpu": {
+    "utilization": "0",
+    "temperature": "39",
+    "memory_used": "517",
+    "power_draw": "5.93",
+    "available": true
+  },
+  "memory": {
+    "K total memory": "32676432",
+    "K used memory": "3963404",
+    "K active memory": "3605088",
+    "K inactive memory": "1451796",
+    "K free memory": "26624820",
+    "K buffer memory": "210892",
+    "K swap cache": "2439964",
+    "K total swap": "16777212",
+    "K used swap": "0",
+    "K free swap": "16777212",
+    "non-nice user cpu ticks": "95947",
+    "nice user cpu ticks": "0",
+    "system cpu ticks": "66408",
+    "idle cpu ticks": "5149535",
+    "IO-wait cpu ticks": "2219",
+    "IRQ cpu ticks": "6360",
+    "softirq cpu ticks": "4190",
+    "stolen cpu ticks": "0",
+    "non-nice guest cpu ticks": "0",
+    "nice guest cpu ticks": "0",
+    "K paged in": "2230794",
+    "K paged out": "593017",
+    "pages swapped in": "0",
+    "pages swapped out": "0",
+    "pages alloc in dma": "1024",
+    "pages alloc in dma32": "1024",
+    "pages alloc in high": "0",
+    "pages alloc in movable": "0",
+    "pages alloc in normal": "40040189",
+    "pages free": "46724567",
+    "interrupts": "13883091",
+    "CPU context switches": "20397586",
+    "boot time": "1750095109",
+    "forks": "315793"
+  },
+  "temps": {
+    "r8169_0_500:00-mdio-0": {
+      "Adapter": "MDIO adapter",
+      "temp1": {
+        "temp1_input": 44.5,
+        "temp1_max": 120
+      }
+    },
+    "nvme-pci-0300": {
+      "Adapter": "PCI adapter",
+      "Composite": {
+        "temp1_input": 39.85,
+        "temp1_max": 84.85,
+        "temp1_min": -0.15,
+        "temp1_crit": 94.85,
+        "temp1_alarm": 0
+      },
+      "Sensor 1": {
+        "temp2_input": 38.85,
+        "temp2_max": 65261.85,
+        "temp2_min": -273.15
+      },
+      "Sensor 2": {
+        "temp3_input": 55.85,
+        "temp3_max": 65261.85,
+        "temp3_min": -273.15
+      },
+      "Sensor 8": {
+        "temp9_input": 38.85,
+        "temp9_max": 65261.85,
+        "temp9_min": -273.15
+      }
+    },
+    "acpitz-acpi-0": {
+      "Adapter": "ACPI interface",
+      "temp1": {
+        "temp1_input": 16.8
+      },
+      "temp2": {
+        "temp2_input": 27.8
+      }
+    },
+    "coretemp-isa-0000": {
+      "Adapter": "ISA adapter",
+      "Package id 0": {
+        "temp1_input": 30,
+        "temp1_max": 80,
+        "temp1_crit": 100,
+        "temp1_crit_alarm": 0
+      },
+      "Core 0": {
+        "temp2_input": 26,
+        "temp2_max": 80,
+        "temp2_crit": 100,
+        "temp2_crit_alarm": 0
+      },
+      "Core 4": {
+        "temp6_input": 25,
+        "temp6_max": 80,
+        "temp6_crit": 100,
+        "temp6_crit_alarm": 0
+      },
+      "Core 8": {
+        "temp10_input": 28,
+        "temp10_max": 80,
+        "temp10_crit": 100,
+        "temp10_crit_alarm": 0
+      },
+      "Core 12": {
+        "temp14_input": 25,
+        "temp14_max": 80,
+        "temp14_crit": 100,
+        "temp14_crit_alarm": 0
+      },
+      "Core 16": {
+        "temp18_input": 26,
+        "temp18_max": 80,
+        "temp18_crit": 100,
+        "temp18_crit_alarm": 0
+      },
+      "Core 20": {
+        "temp22_input": 25,
+        "temp22_max": 80,
+        "temp22_crit": 100,
+        "temp22_crit_alarm": 0
+      },
+      "Core 24": {
+        "temp26_input": 26,
+        "temp26_max": 80,
+        "temp26_crit": 100,
+        "temp26_crit_alarm": 0
+      },
+      "Core 28": {
+        "temp30_input": 27,
+        "temp30_max": 80,
+        "temp30_crit": 100,
+        "temp30_crit_alarm": 0
+      },
+      "Core 36": {
+        "temp38_input": 25,
+        "temp38_max": 80,
+        "temp38_crit": 100,
+        "temp38_crit_alarm": 0
+      },
+      "Core 37": {
+        "temp39_input": 25,
+        "temp39_max": 80,
+        "temp39_crit": 100,
+        "temp39_crit_alarm": 0
+      },
+      "Core 38": {
+        "temp40_input": 25,
+        "temp40_max": 80,
+        "temp40_crit": 100,
+        "temp40_crit_alarm": 0
+      },
+      "Core 39": {
+        "temp41_input": 25,
+        "temp41_max": 80,
+        "temp41_crit": 100,
+        "temp41_crit_alarm": 0
+      }
+    },
+    "gigabyte_wmi-virtual-0": {
+      "Adapter": "Virtual device",
+      "temp1": {
+        "temp1_input": 33
+      },
+      "temp2": {
+        "temp2_input": 47
+      },
+      "temp3": {
+        "temp3_input": 30
+      },
+      "temp4": {
+        "temp4_input": 35
+      },
+      "temp5": {
+        "temp5_input": 36
+      },
+      "temp6": {
+        "temp6_input": 49
+      }
+    },
+    "nvme-pci-0200": {
+      "Adapter": "PCI adapter",
+      "Composite": {
+        "temp1_input": 37.85,
+        "temp1_max": 84.85,
+        "temp1_min": -273.15,
+        "temp1_crit": 84.85,
+        "temp1_alarm": 0
+      },
+      "Sensor 1": {
+        "temp2_input": 37.85,
+        "temp2_max": 65261.85,
+        "temp2_min": -273.15
+      },
+      "Sensor 2": {
+        "temp3_input": 39.85,
+        "temp3_max": 65261.85,
+        "temp3_min": -273.15
+      }
+    }
+  }
+}
