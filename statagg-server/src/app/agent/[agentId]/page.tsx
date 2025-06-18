@@ -155,7 +155,7 @@ export default function AgentPage() {
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-lg font-semibold mb-2 text-gray-700">CPU Power</h3>
               <div className="text-3xl font-bold text-blue-600">{agentMetrics.cpu?.PkgWatt}W</div>
-              <div className="text-sm text-gray-500">Temp: {agentMetrics.cpu?.PkgTmp}°C</div>
+              <div className="text-sm text-gray-500">Temp: {agentMetrics.temps?.['coretemp-isa-0000']?.['Package id 0']?.temp1_input || agentMetrics.temps?.['k10temp-pci-00c3']?.['Tctl']?.temp1_input || 0}°C</div>
             </div>
 
             {agentMetrics.gpu?.available && (
