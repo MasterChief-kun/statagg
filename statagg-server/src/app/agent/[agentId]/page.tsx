@@ -35,7 +35,7 @@ interface HistoricalData {
 export default function AgentPage() {
   const params = useParams();
   const agentId = params.agentId as string;
-  const { agents, metrics, sendCommand, isConnected } = useWebSocket(process.env.WS_URL);
+  const { agents, metrics, sendCommand, isConnected } = useWebSocket(process.env.NEXT_PUBLIC_WS_URL);
 
   const [historicalData, setHistoricalData] = useState<HistoricalData[]>([]);
   const [maxDataPoints] = useState(50); // Keep last 50 data points
