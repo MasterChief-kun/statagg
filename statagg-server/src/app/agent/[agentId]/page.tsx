@@ -35,14 +35,14 @@ interface HistoricalData {
 export default function AgentPage() {
   const params = useParams();
   const agentId = params.agentId as string;
-  const { agents, metrics, sendCommand, isConnected } = useWebSocket('ws://localhost:3000/ws');
+  const { agents, metrics, sendCommand, isConnected } = useWebSocket(process.env.WS_URL);
 
   const [historicalData, setHistoricalData] = useState<HistoricalData[]>([]);
   const [maxDataPoints] = useState(50); // Keep last 50 data points
 
   // Get the specific agent and its metrics
-  const agent = agents.find((a: any) => a.agentId === agentId);
-  const agentMetrics = metrics[agentId];
+  const agent : any = agents.find((a: any) => a.agentId === agentId);
+  const agentMetrics : any = metrics[agentId as keyof typeof metrics];
   const isOnline = !!agent;
 
   // Update historical data when new metrics arrive
@@ -54,7 +54,7 @@ export default function AgentPage() {
         memory: agentMetrics.memory ?
           (parseFloat(agentMetrics.memory['K used memory']) / parseFloat(agentMetrics.memory['K total memory'])) * 100 : 0,
         gpu: agentMetrics.gpu?.utilization ? parseFloat(agentMetrics.gpu.utilization) : undefined,
-        cpuTemp: agentMetrics.temps?.['coretemp-isa-0000']?.['Package id 0']?.temp1_input || 0,
+        cpuTemp: agentMetrics.temps?.['coretemp-isa-0000']?.['Package id 0']?.temp1_input || agentMetrics.temps?.['k10temp-pci-00c3']?.['Tctl']?.temp1_input || 0,
         gpuTemp: agentMetrics.gpu?.temperature ? parseFloat(agentMetrics.gpu.temperature) : undefined,
         cpuPower: parseFloat(agentMetrics.cpu?.PkgWatt || '0'),
         gpuPower: agentMetrics.gpu?.power_draw ? parseFloat(agentMetrics.gpu.power_draw) : undefined

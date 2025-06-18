@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/sidebar"
 import { Monitor, Activity, Zap } from "lucide-react"
 
-export function AppSidebar({ agents, metrics, isConnected, selectedAgent, onAgentSelect, ...props }) {
+export function AppSidebar({ agents, metrics, isConnected, onAgentSelect, ...props }) {
 
   // agents = agents.filter(obj => obj.agentId == "webclient");
   console.log(agents)
@@ -44,7 +44,6 @@ export function AppSidebar({ agents, metrics, isConnected, selectedAgent, onAgen
                   <SidebarMenuItem key={agent.agentId}>
                     <SidebarMenuButton
                       onClick={() => onAgentSelect(agent.agentId)}
-                      isActive={selectedAgent === agent.agentId}
                       className="w-full"
                     >
                       <div className="flex items-center gap-3 w-full">

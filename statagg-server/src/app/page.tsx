@@ -10,7 +10,7 @@ import { useRouter } from 'next/navigation';
 export default function Dashboard() {
   const router = useRouter();
 
-  const { agents, metrics, isConnected, sendCommand } = useWebSocket('ws://localhost:3000/ws');
+  const { agents, metrics, isConnected, sendCommand } = useWebSocket(process.env.WS_URL);
 
   const onAgentSelect = (agentId: string) => {
     router.push(`/agent/${agentId}`);
